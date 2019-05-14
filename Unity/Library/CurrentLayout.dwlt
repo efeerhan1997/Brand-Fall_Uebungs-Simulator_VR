@@ -73,7 +73,7 @@ MonoBehaviour:
   m_MinSize: {x: 683, y: 498}
   m_MaxSize: {x: 14004, y: 14048}
   vertical: 0
-  controlID: 92
+  controlID: 95
 --- !u!114 &4
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -218,7 +218,7 @@ MonoBehaviour:
   m_MinSize: {x: 406, y: 498}
   m_MaxSize: {x: 10002, y: 14048}
   vertical: 1
-  controlID: 93
+  controlID: 96
 --- !u!114 &10
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -243,7 +243,7 @@ MonoBehaviour:
   m_MinSize: {x: 406, y: 224}
   m_MaxSize: {x: 8006, y: 4024}
   vertical: 0
-  controlID: 94
+  controlID: 97
 --- !u!114 &11
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -326,7 +326,8 @@ MonoBehaviour:
   m_PersistentViewDataDictionary: {fileID: 0}
   m_SearchFilter:
     m_NameFilter: 
-    m_ClassNames: []
+    m_ClassNames:
+    - Material
     m_AssetLabels: []
     m_AssetBundleNames: []
     m_VersionControlStates: []
@@ -334,22 +335,21 @@ MonoBehaviour:
     m_ReferencingInstanceIDs: 
     m_SceneHandles: 
     m_ShowAllHits: 0
-    m_SearchArea: 1
-    m_Folders:
-    - Assets
+    m_SearchArea: 0
+    m_Folders: []
   m_ViewMode: 1
   m_StartGridSize: 64
   m_LastFolders:
-  - Assets
+  - Assets/AssetStoreOriginals/_SNAPS_PrototypingAssets/ModernOfficeInterior/Prefabs/Props
   m_LastFoldersGridSize: -1
-  m_LastProjectPath: /Users/jonaweber/Documents/GitHub/Brand-Fall_Uebungs-Simulator_VR/Unity
+  m_LastProjectPath: /Users/jonaweber/Brand
   m_LockTracker:
     m_IsLocked: 0
   m_FolderTreeState:
     scrollPos: {x: 0, y: 0}
-    m_SelectedIDs: bc320000
-    m_LastClickedID: 12988
-    m_ExpandedIDs: 00000000bc320000ac350000963800005c3a0000603b0000143c0000ba3d0000ea3f00000e420000e8420000f84500002c490000fa490000644a00006c4a0000a84b0000984c00003a4e0000224f0000ac51000000ca9a3b
+    m_SelectedIDs: 01ca9a3b
+    m_LastClickedID: 1000000001
+    m_ExpandedIDs: 00000000f6150000e6180000d01b0000961d00009a1e00004e1f0000f4200000262300004a25000024260000362900006c2c00003a2d0000a42d0000ac2d0000e82e0000d82f00007c31000064320000ee34000000ca9a3b
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -377,7 +377,7 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 
     m_LastClickedID: 0
-    m_ExpandedIDs: 00000000bc320000ac350000963800005c3a0000603b0000143c0000ba3d0000ea3f00000e420000e8420000f84500002c490000fa490000644a00006c4a0000a84b0000984c00003a4e0000224f0000ac510000
+    m_ExpandedIDs: 00000000f6150000e6180000d01b0000961d00009a1e00004e1f0000f4200000262300004a25000024260000362900006c2c00003a2d0000a42d0000ac2d0000e82e0000d82f00007c31000064320000ee340000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -429,7 +429,7 @@ MonoBehaviour:
       m_Icon: {fileID: 0}
       m_ResourceFile: 
     m_NewAssetIndexInList: -1
-    m_ScrollPosition: {x: 0, y: 0}
+    m_ScrollPosition: {x: 0, y: 1127.1919}
     m_GridSize: 64
   m_DirectoriesAreaWidth: 260
 --- !u!114 &14
@@ -498,7 +498,7 @@ MonoBehaviour:
       scrollPos: {x: 0, y: 0}
       m_SelectedIDs: 
       m_LastClickedID: 0
-      m_ExpandedIDs: 5efbffff
+      m_ExpandedIDs: cefbffff
       m_RenameOverlay:
         m_UserAcceptedRename: 0
         m_Name: 
@@ -554,9 +554,9 @@ MonoBehaviour:
   m_isRotationLocked: 0
   m_AudioPlay: 0
   m_Position:
-    m_Target: {x: 136.46071, y: 95.1185, z: 163.00217}
+    m_Target: {x: 157.62538, y: 94.97447, z: 194.14445}
     speed: 2
-    m_Value: {x: 136.46071, y: 95.1185, z: 163.00217}
+    m_Value: {x: 157.62538, y: 94.97447, z: 194.14445}
   m_RenderMode: 0
   m_CameraMode:
     drawMode: 0
@@ -584,9 +584,9 @@ MonoBehaviour:
       speed: 2
       m_Value: 0
   m_Rotation:
-    m_Target: {x: -0.017687924, y: 0.97789735, z: -0.09271805, w: -0.18656734}
+    m_Target: {x: 0.0006840914, y: 0.8949473, z: -0.0013694005, w: 0.44616938}
     speed: 2
-    m_Value: {x: -0.017687924, y: 0.97789735, z: -0.09271805, w: -0.18656734}
+    m_Value: {x: 0.0006840914, y: 0.8949473, z: -0.0013694005, w: 0.44616938}
   m_Size:
     m_Target: 4.753772
     speed: 2
