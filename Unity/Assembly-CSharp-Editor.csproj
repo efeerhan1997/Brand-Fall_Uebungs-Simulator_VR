@@ -96,19 +96,19 @@
      <Compile Include="Assets\VRTK\Source\Editor\VRTK_UpdatePrompt.cs" />
      <None Include="Assets\EffectExamples\Editor\PackageManagerAssembly\PackageImportList.txt" />
  <Reference Include="Unity.ProGrids">
- <HintPath>C:/Unity/Library/ScriptAssemblies/Unity.ProGrids.dll</HintPath>
+ <HintPath>C:/Users/oculus/Documents/GitHub/Brand-Fall_Uebungs-Simulator_VR/Unity/Library/ScriptAssemblies/Unity.ProGrids.dll</HintPath>
  </Reference>
  <Reference Include="Unity.ProBuilder.AssetIdRemapUtility">
- <HintPath>C:/Unity/Library/ScriptAssemblies/Unity.ProBuilder.AssetIdRemapUtility.dll</HintPath>
+ <HintPath>C:/Users/oculus/Documents/GitHub/Brand-Fall_Uebungs-Simulator_VR/Unity/Library/ScriptAssemblies/Unity.ProBuilder.AssetIdRemapUtility.dll</HintPath>
  </Reference>
  <Reference Include="Unity.ProGrids.Editor">
- <HintPath>C:/Unity/Library/ScriptAssemblies/Unity.ProGrids.Editor.dll</HintPath>
+ <HintPath>C:/Users/oculus/Documents/GitHub/Brand-Fall_Uebungs-Simulator_VR/Unity/Library/ScriptAssemblies/Unity.ProGrids.Editor.dll</HintPath>
  </Reference>
  <Reference Include="Unity.PackageManagerUI.Editor">
- <HintPath>C:/Unity/Library/ScriptAssemblies/Unity.PackageManagerUI.Editor.dll</HintPath>
+ <HintPath>C:/Users/oculus/Documents/GitHub/Brand-Fall_Uebungs-Simulator_VR/Unity/Library/ScriptAssemblies/Unity.PackageManagerUI.Editor.dll</HintPath>
  </Reference>
  <Reference Include="Unity.ProBuilder.AddOns.Editor">
- <HintPath>C:/Unity/Library/ScriptAssemblies/Unity.ProBuilder.AddOns.Editor.dll</HintPath>
+ <HintPath>C:/Users/oculus/Documents/GitHub/Brand-Fall_Uebungs-Simulator_VR/Unity/Library/ScriptAssemblies/Unity.ProBuilder.AddOns.Editor.dll</HintPath>
  </Reference>
  <Reference Include="UnityEngine.AIModule">
  <HintPath>C:/Program Files/Unity/Editor/Data/Managed/UnityEngine/UnityEngine.AIModule.dll</HintPath>
@@ -342,7 +342,7 @@
  <HintPath>C:/Program Files/Unity/Editor/Data/PlaybackEngines/windowsstandalonesupport/UnityEditor.WindowsStandalone.Extensions.dll</HintPath>
  </Reference>
  <Reference Include="PackageManagerAssembly">
- <HintPath>C:/Unity/Assets/EffectExamples/Editor/PackageManagerAssembly/PackageManagerAssembly.dll</HintPath>
+ <HintPath>C:/Users/oculus/Documents/GitHub/Brand-Fall_Uebungs-Simulator_VR/Unity/Assets/EffectExamples/Editor/PackageManagerAssembly/PackageManagerAssembly.dll</HintPath>
  </Reference>
  <Reference Include="mscorlib">
  <HintPath>C:/Program Files/Unity/Editor/Data/MonoBleedingEdge/lib/mono/2.0-api/mscorlib.dll</HintPath>
