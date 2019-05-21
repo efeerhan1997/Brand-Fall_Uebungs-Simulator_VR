@@ -2,15 +2,17 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class ElevatorUpDown : MonoBehaviour
+public class CallElevatorUp : MonoBehaviour
 {
     public Animator _animator;
+	
+
 
     private bool _isInsideTrigger = false;
 
     private bool _isUp = false;
 
-
+    // Use this for initialization
 
     void OnTriggerEnter(Collider other)
     {
@@ -32,6 +34,7 @@ public class ElevatorUpDown : MonoBehaviour
     }
 
 
+	
     // Update is called once per frame
     void Update()
     {
@@ -40,9 +43,12 @@ public class ElevatorUpDown : MonoBehaviour
         {
             if (Input.GetKeyDown(KeyCode.E))
             {
-                _isUp = !_isUp;
-                _animator.SetBool("up", _isUp);
+
+
+                _animator.SetBool("up", true);
+				
             }
         }
     }
+
 }

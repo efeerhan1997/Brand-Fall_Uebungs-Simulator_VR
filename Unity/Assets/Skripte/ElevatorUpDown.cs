@@ -2,15 +2,19 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class CallElevatorUp : MonoBehaviour
+public class ElevatorUpDown : MonoBehaviour
 {
     public Animator _animator;
+
+
+    
 
     private bool _isInsideTrigger = false;
 
     private bool _isUp = false;
 
-    // Use this for initialization
+
+
 
     void OnTriggerEnter(Collider other)
     {
@@ -40,10 +44,9 @@ public class CallElevatorUp : MonoBehaviour
         {
             if (Input.GetKeyDown(KeyCode.E))
             {
-
-
-                _animator.SetBool("up", true);
-
+                _isUp = !_isUp;
+		
+                _animator.SetBool("up", _isUp);
             }
         }
     }
