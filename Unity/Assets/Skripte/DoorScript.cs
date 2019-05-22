@@ -4,11 +4,13 @@ using UnityEngine;
 
 public class DoorScript : MonoBehaviour
 {
+
     private Animator _animator;
 
     private bool _isInsideTrigger = false;
 
     private bool _isopen = false;
+
 
     // Use this for initialization
     void Start()
@@ -35,14 +37,14 @@ public class DoorScript : MonoBehaviour
         }
     }
 
-
+	
     // Update is called once per frame
     void Update()
-    {
+    { 
 
         if (_isInsideTrigger)
         {
-            if (Input.GetKeyDown(KeyCode.E))
+            if (OVRInput.Get(OVRInput.Button.One))
             {
                 _isopen = !_isopen;
                 _animator.SetBool("open", _isopen);
