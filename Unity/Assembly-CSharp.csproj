@@ -360,6 +360,7 @@
      <Compile Include="Assets\Skripte\DoorScript.cs" />
      <Compile Include="Assets\Skripte\ElevatorUpDown.cs" />
      <Compile Include="Assets\Skripte\WindowScript.cs" />
+     <Compile Include="Assets\StartGame.cs" />
      <Compile Include="Assets\TESTETHAN.cs" />
      <Compile Include="Assets\VRSampleScenes\Scripts\Common\SessionData.cs" />
      <Compile Include="Assets\VRSampleScenes\Scripts\Examples\ExampleInteractiveItem.cs" />
