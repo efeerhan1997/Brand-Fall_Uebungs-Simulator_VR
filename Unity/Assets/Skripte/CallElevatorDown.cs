@@ -39,11 +39,11 @@ public class CallElevatorDown : MonoBehaviour
 
         if (_isInsideTrigger)
         {
-            if (Input.GetKeyDown(KeyCode.E))
+            if (OVRInput.Get(OVRInput.Button.One))
             {
-                if (_isUp = true)
-
+                
                     _animator.SetBool("up", false);
+					
             }
         }
     }

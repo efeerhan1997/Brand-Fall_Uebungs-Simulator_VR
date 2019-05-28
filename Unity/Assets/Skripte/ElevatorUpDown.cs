@@ -42,7 +42,7 @@ public class ElevatorUpDown : MonoBehaviour
 
         if (_isInsideTrigger)
         {
-            if (Input.GetKeyDown(KeyCode.E))
+            if (OVRInput.Get(OVRInput.Button.One))
             {
                 _isUp = !_isUp;
 		

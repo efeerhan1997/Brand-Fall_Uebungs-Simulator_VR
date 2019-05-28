@@ -33,7 +33,6 @@ public class DoorScript : MonoBehaviour
         if (other.tag == "Player")
         {
             _isInsideTrigger = false;
-
         }
     }
 
@@ -41,14 +40,15 @@ public class DoorScript : MonoBehaviour
     // Update is called once per frame
     void Update()
     { 
-
-        if (_isInsideTrigger)
+		if (_isInsideTrigger)
         {
             if (OVRInput.Get(OVRInput.Button.One))
             {
+			
+				Debug.Log("GEDRÜCKT");
                 _isopen = !_isopen;
                 _animator.SetBool("open", _isopen);
             }
         }
-    }
+	 }  
 }

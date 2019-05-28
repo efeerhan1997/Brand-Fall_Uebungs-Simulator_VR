@@ -42,11 +42,11 @@ public class DoorMainEntranceScript : MonoBehaviour
 
         if (_isInsideTrigger)
         {
-            if (Input.GetKeyDown(KeyCode.E))
+            if (OVRInput.Get(OVRInput.Button.One))
             {
-                _isopen = !_isopen;
-                _animator.SetBool("open", _isopen);
-            }
+				_isopen = !_isopen;
+				_animator.SetBool("open", _isopen);
+			}
         }
     }
 }

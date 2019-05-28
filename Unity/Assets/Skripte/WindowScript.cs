@@ -42,7 +42,7 @@ public class WindowScript : MonoBehaviour
 
         if (_isInsideTrigger)
         {
-            if (Input.GetKeyDown(KeyCode.E))
+            if (OVRInput.Get(OVRInput.Button.One))
             {
                 _isopen = !_isopen;
                 _animator.SetBool("open", _isopen);
