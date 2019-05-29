@@ -8612,8 +8612,11 @@ GameObject:
   - component: {fileID: 704941824}
   - component: {fileID: 704941823}
   - component: {fileID: 704941822}
-  - component: {fileID: 704941827}
   - component: {fileID: 704941826}
+  - component: {fileID: 704941830}
+  - component: {fileID: 704941829}
+  - component: {fileID: 704941828}
+  - component: {fileID: 704941827}
   m_Layer: 0
   m_Name: Plane
   m_TagString: Untagged
@@ -8707,7 +8710,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   isDamaging: 1
-  damage: 1000
+  damage: 10000
 --- !u!65 &704941827
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -8716,11 +8719,50 @@ BoxCollider:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 704941821}
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 7.0606017, y: 17.42165, z: 7.219978}
-  m_Center: {x: 0.5437378, y: 8.538206, z: -0.15009575}
+  m_Size: {x: 1.5012375, y: 8.711994, z: 4.679121}
+  m_Center: {x: 4.2939696, y: 3.855997, z: -0.1254076}
+--- !u!65 &704941828
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 704941821}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 6.9613276, y: 7.4324875, z: 2.9996681}
+  m_Center: {x: 1.511842, y: 3.2162437, z: -3.4949086}
+--- !u!65 &704941829
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 704941821}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 3.1967552, y: 8.077286, z: 7.1652603}
+  m_Center: {x: -3.4127095, y: 3.538643, z: -1.3918518}
+--- !u!65 &704941830
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 704941821}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 9.9325285, y: 8.445305, z: 2.8675838}
+  m_Center: {x: 0.03156357, y: 3.7226524, z: 3.442084}
 --- !u!1001 &708437013
 PrefabInstance:
   m_ObjectHideFlags: 0
