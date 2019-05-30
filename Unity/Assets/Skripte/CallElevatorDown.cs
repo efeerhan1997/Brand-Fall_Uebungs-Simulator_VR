@@ -5,6 +5,8 @@ using UnityEngine;
 public class CallElevatorDown : MonoBehaviour
 {
     public Animator _animator;
+    public Animator Elevator_door_EG;
+    public Animator Elevator_door_OG;
 
     private bool _isInsideTrigger = false;
 
@@ -41,8 +43,9 @@ public class CallElevatorDown : MonoBehaviour
         {
             if (OVRInput.Get(OVRInput.Button.One))
             {
-                
-                    _animator.SetBool("up", false);
+                Elevator_door_EG.SetBool("open", true);
+                Elevator_door_OG.SetBool("open", false);
+                _animator.SetBool("up", false);
 					
             }
         }

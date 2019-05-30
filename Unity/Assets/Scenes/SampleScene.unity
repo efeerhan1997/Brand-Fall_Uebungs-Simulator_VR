@@ -9648,7 +9648,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4381973011225120, guid: 238ac8785f3f5b947941aa4fd6e0ce86, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 35.65
+      value: 33.11
       objectReference: {fileID: 0}
     - target: {fileID: 4381973011225120, guid: 238ac8785f3f5b947941aa4fd6e0ce86, type: 3}
       propertyPath: m_LocalRotation.x
@@ -18500,6 +18500,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _animator: {fileID: 1294140752}
+  Elevator_door_EG: {fileID: 1552844119}
+  Elevator_door_OG: {fileID: 1140136763}
 --- !u!65 &1435808956
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -20038,7 +20040,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4381973011225120, guid: 238ac8785f3f5b947941aa4fd6e0ce86, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 35.661
+      value: 32.991
       objectReference: {fileID: 0}
     - target: {fileID: 4381973011225120, guid: 238ac8785f3f5b947941aa4fd6e0ce86, type: 3}
       propertyPath: m_LocalRotation.x
@@ -23054,6 +23056,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _animator: {fileID: 1294140752}
+  Elevator_door_EG: {fileID: 0}
+  Elevator_door_OG: {fileID: 0}
 --- !u!65 &1811570879
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -26120,6 +26124,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _animator: {fileID: 1294140752}
+  Elevator_door_EG: {fileID: 1552844119}
+  Elevator_door_OG: {fileID: 1140136763}
 --- !u!65 &2107280725
 BoxCollider:
   m_ObjectHideFlags: 0
