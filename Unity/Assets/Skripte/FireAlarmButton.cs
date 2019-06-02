@@ -4,17 +4,15 @@ using UnityEngine;
 
 public class FireAlarmButton : MonoBehaviour
 {
-    private AudioSource FireAlarm;
+    public AudioSource FireAlarmEG;
+    public AudioSource FireAlarmOG;
     public AudioSource Telephone_ring;
 
     private bool _isInsideTrigger = false;
-    private bool _isOn = false;
+    
 
     // Start is called before the first frame update
-    private void Start()
-    {
-        FireAlarm = GetComponent<AudioSource>();
-    }
+   
     void OnTriggerEnter(Collider other)
     {
         if (other.tag == "Player")
@@ -40,11 +38,13 @@ public class FireAlarmButton : MonoBehaviour
             if (OVRInput.Get(OVRInput.Button.One))
             {
                
-                FireAlarm.Stop();
+                FireAlarmEG.Stop();
+                FireAlarmOG.Stop();
                 Telephone_ring.Stop();
 
 
-                FireAlarm.Play();
+                FireAlarmEG.Play();
+                FireAlarmOG.Play();
                 Telephone_ring.Play();
             }
         }
