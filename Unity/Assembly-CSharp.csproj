@@ -374,6 +374,7 @@
     <Compile Include="Assets\Skripte\DoorScript.cs" />
     <Compile Include="Assets\Skripte\ElevatorControl.cs" />
     <Compile Include="Assets\Skripte\ElevatorUpDown.cs" />
+    <Compile Include="Assets\Skripte\FireAlarmButton.cs" />
     <Compile Include="Assets\Skripte\StartGame_Array.cs" />
     <Compile Include="Assets\Skripte\Telephone_Text.cs" />
     <Compile Include="Assets\Skripte\TESTETHAN.cs" />
