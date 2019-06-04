@@ -4,26 +4,18 @@ using UnityEngine;
 
 public class Telephone_Text : MonoBehaviour
 {
-    public AudioSource Telephone_audio;
+    private AudioSource Telephone_audio;
     public AudioSource Telephone_ring;
 
     private bool _isInsideTrigger = false;
-    private bool _isOn = false;
-    private int RandomTime;
+    private bool _isOn = true;
+   
 
     // Start is called before the first frame update
     void Start()
     {
-        RandomTime = Random.Range(15, 31);
-        Debug.Log(RandomTime);
-        //Telephone_audio = GetComponent<AudioSource>();
-        //Telephone_ring = GetComponent<AudioSource>();
-        Invoke("StartTelephone", RandomTime);
-    }
-
-    void StartTelephone()
-    {
-        Telephone_ring.Play();
+        Telephone_audio = GetComponent<AudioSource>();
+            
     }
 
 
@@ -51,21 +43,20 @@ public class Telephone_Text : MonoBehaviour
         {
             if(OVRInput.Get(OVRInput.Button.One))
             {
-                Telephone_ring.Stop();
                 _isOn = !_isOn;
 
-                if (_isOn == true)
+                if (Telephone_ring.isPlaying == true && _isOn == false)
                 {
-                    Telephone_audio.Play();
+                    Telephone_ring.Stop();
+                    Telephone_audio.Play();                                   
                 }
 
-                else
+                else if (Telephone_ring.isPlaying == false && _isOn == true)
                 {
                     Telephone_audio.Stop();
                 }
-                
-
             }
+            
         }
     }
 }

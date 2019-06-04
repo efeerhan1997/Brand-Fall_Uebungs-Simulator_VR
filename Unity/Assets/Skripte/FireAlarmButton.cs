@@ -37,15 +37,12 @@ public class FireAlarmButton : MonoBehaviour
         {
             if (OVRInput.Get(OVRInput.Button.One))
             {
-               
-                FireAlarmEG.Stop();
-                FireAlarmOG.Stop();
-                Telephone_ring.Stop();
-
-
-                FireAlarmEG.Play();
-                FireAlarmOG.Play();
-                Telephone_ring.Play();
+                if (FireAlarmEG.isPlaying == false)
+                {
+                    FireAlarmEG.Play();
+                    FireAlarmOG.Play();
+                    Telephone_ring.Play();
+                }
             }
         }
     }

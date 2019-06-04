@@ -9,29 +9,47 @@ public class StartGame_Array : MonoBehaviour
 	public Vector3 position1;
 	public Vector3 position2;
 	public Vector3 position3;
+    public AudioSource FireAlarmEG;
+    public AudioSource FireAlarmOG;
+    public AudioSource TelephoneRing;
 
-	private int random;
+	private int RandomScene;
+    private int RandomTime;
 
 
-    // Start is called before the first frame update
+ 
    
-    
-	//random = Random.Range(0,4);
+ 
 	void Awake()
-	{	
+	{
+        RandomTime = Random.Range(15, 45);
+        RandomScene = Random.Range(0, 2);
+        if (RandomScene == 0)
+        {
+            Invoke("AlarmIsOnAtSceneStart", RandomTime);
+            Debug.Log(RandomTime);
+            Debug.Log(RandomScene);
+        }
 
-		random = Random.Range(0,4);
-		Debug.Log(random);
-		Arrayposition[0]= position0;
-		Arrayposition[1]= position1;
-		Arrayposition[2]= position2;
-		Arrayposition[3]= position3;
+		//random = Random.Range(0,4);
+		//Debug.Log(random);
+		//Arrayposition[0]= position0;
+		//Arrayposition[1]= position1;
+		//Arrayposition[2]= position2;
+		//Arrayposition[3]= position3;
 
 
 		
-		transform.position = Arrayposition[random];
-		Debug.Log(Arrayposition[random]);
+		//transform.position = Arrayposition[random];
+		//Debug.Log(Arrayposition[random]);
         
+    }
+
+    void AlarmIsOnAtSceneStart()
+    {
+        FireAlarmEG.Play();
+        FireAlarmOG.Play();
+        TelephoneRing.Play();
     }
 
     // Update is called once per frame
