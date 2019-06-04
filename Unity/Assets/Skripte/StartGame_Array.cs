@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class StartGame_Array : MonoBehaviour
 {
-	public Vector3[] Arrayposition;
+    public Vector3[] Arrayposition = new Vector3[4];
 	public Vector3 position0;
 	public Vector3 position1;
 	public Vector3 position2;
@@ -13,8 +13,10 @@ public class StartGame_Array : MonoBehaviour
     public AudioSource FireAlarmOG;
     public AudioSource TelephoneRing;
 
+    public GameObject Fire;
 	private int RandomScene;
     private int RandomTime;
+    private int RandomFire;
 
 
  
@@ -31,17 +33,17 @@ public class StartGame_Array : MonoBehaviour
             Debug.Log(RandomScene);
         }
 
-		//random = Random.Range(0,4);
-		//Debug.Log(random);
-		//Arrayposition[0]= position0;
-		//Arrayposition[1]= position1;
-		//Arrayposition[2]= position2;
-		//Arrayposition[3]= position3;
+		RandomFire = Random.Range(0,4);
+		Debug.Log(RandomFire);
+		Arrayposition[0]= position0;
+		Arrayposition[1]= position1;
+		Arrayposition[2]= position2;
+		Arrayposition[3]= position3;
 
 
 		
-		//transform.position = Arrayposition[random];
-		//Debug.Log(Arrayposition[random]);
+		Fire.transform.position = new Vector3(position2);
+		Debug.Log(Arrayposition[RandomFire]);
         
     }
 

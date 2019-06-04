@@ -5129,7 +5129,6 @@ GameObject:
   - component: {fileID: 348688069}
   - component: {fileID: 348688068}
   - component: {fileID: 348688067}
-  - component: {fileID: 348688066}
   m_Layer: 0
   m_Name: Cube
   m_TagString: Untagged
@@ -5145,32 +5144,12 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 348688064}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 41.29, y: -94.01, z: 146.84}
+  m_LocalPosition: {x: 84.255, y: -93.804, z: 146}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 534669905}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &348688066
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 348688064}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b7bf20d7a28b107478211e6461bcbcbf, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  Arrayposition: []
-  position0: {x: 38.76, y: -94, z: 155}
-  position1: {x: 38.76, y: -94, z: 157}
-  position2: {x: 38.76, y: -94, z: 160}
-  position3: {x: 38.76, y: -94, z: 162}
-  FireAlarmEG: {fileID: 0}
-  FireAlarmOG: {fileID: 0}
-  TelephoneRing: {fileID: 0}
 --- !u!65 &348688067
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -16294,13 +16273,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Arrayposition: []
-  position0: {x: 0, y: 0, z: 0}
-  position1: {x: 0, y: 0, z: 0}
-  position2: {x: 0, y: 0, z: 0}
-  position3: {x: 0, y: 0, z: 0}
+  position0: {x: 80, y: -93.8, z: 146}
+  position1: {x: 85, y: -93.8, z: 146}
+  position2: {x: 90, y: -93.8, z: 146}
+  position3: {x: 95, y: -93.8, z: 146}
   FireAlarmEG: {fileID: 1609222201}
   FireAlarmOG: {fileID: 1182070862}
   TelephoneRing: {fileID: 749455213}
+  Fire: {fileID: 348688064}
 --- !u!1 &1140136762 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 1117530218148268, guid: 238ac8785f3f5b947941aa4fd6e0ce86,
