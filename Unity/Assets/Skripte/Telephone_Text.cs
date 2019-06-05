@@ -9,13 +9,13 @@ public class Telephone_Text : MonoBehaviour
 
     private bool _isInsideTrigger = false;
     private bool _isOn = false;
-   
+
 
     // Start is called before the first frame update
+    
     void Start()
-    {
-        Telephone_audio = GetComponent<AudioSource>();
-            
+    {    
+        Telephone_audio = GetComponent<AudioSource>();              
     }
 
 
@@ -39,6 +39,11 @@ public class Telephone_Text : MonoBehaviour
     // Update is called once per frame
     void Update()
     { 
+        if(Telephone_ring.isPlaying == true)
+        {
+            GetComponent<Renderer>().material.color = Color.red;
+        }
+
         if (_isInsideTrigger)
         {
             if(OVRInput.Get(OVRInput.Button.One))
@@ -50,6 +55,7 @@ public class Telephone_Text : MonoBehaviour
                     Telephone_ring.Stop();
                     Telephone_audio.Play();
                     _isOn = !_isOn;
+                    GetComponent<Renderer>().material.color = Color.green;
                 }
 
                 else if (Telephone_ring.isPlaying == false && _isOn == true)
