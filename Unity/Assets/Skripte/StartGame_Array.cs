@@ -34,16 +34,16 @@ public class StartGame_Array : MonoBehaviour
         }
 
 		RandomFire = Random.Range(0,4);
-		Debug.Log(RandomFire);
-		Arrayposition[0]= position0;
-		Arrayposition[1]= position1;
-		Arrayposition[2]= position2;
-		Arrayposition[3]= position3;
+		//Debug.Log(RandomFire);
+		//Arrayposition[0]= position0;
+		//Arrayposition[1]= position1;
+		//Arrayposition[2]= position2;
+		//Arrayposition[3]= position3;
 
 
 		
-		Fire.transform.position = new Vector3(position2);
-		Debug.Log(Arrayposition[RandomFire]);
+		//Fire.transform.position = new Vector3(position2);
+		//Debug.Log(Arrayposition[RandomFire]);
         
     }
 
