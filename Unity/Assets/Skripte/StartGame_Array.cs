@@ -29,9 +29,15 @@ public class StartGame_Array : MonoBehaviour
         if (RandomScene == 0)
         {
             Invoke("AlarmIsOnAtSceneStart", RandomTime);
-            Debug.Log(RandomTime);
-            Debug.Log(RandomScene);
+            Debug.Log(RandomTime + " Sekunden bis alarm");
+            Debug.Log("Feueralarm löst selbst aus");
         }
+
+        if (RandomScene == 1)
+        {
+            Debug.Log("Feueralarm muss selbst ausgelöst werden");
+        }
+    
 
 		RandomFire = Random.Range(0,4);
 		//Debug.Log(RandomFire);

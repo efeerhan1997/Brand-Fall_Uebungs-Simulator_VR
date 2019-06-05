@@ -8,7 +8,7 @@ public class Telephone_Text : MonoBehaviour
     public AudioSource Telephone_ring;
 
     private bool _isInsideTrigger = false;
-    private bool _isOn = true;
+    private bool _isOn = false;
    
 
     // Start is called before the first frame update
@@ -43,17 +43,19 @@ public class Telephone_Text : MonoBehaviour
         {
             if(OVRInput.Get(OVRInput.Button.One))
             {
-                _isOn = !_isOn;
+                
 
                 if (Telephone_ring.isPlaying == true && _isOn == false)
                 {
                     Telephone_ring.Stop();
-                    Telephone_audio.Play();                                   
+                    Telephone_audio.Play();
+                    _isOn = !_isOn;
                 }
 
                 else if (Telephone_ring.isPlaying == false && _isOn == true)
                 {
                     Telephone_audio.Stop();
+                    _isOn = !_isOn;
                 }
             }
             
