@@ -44,6 +44,7 @@ public class CallElevatorUp : MonoBehaviour
         {
             if (OVRInput.Get(OVRInput.Button.One))
             {
+				GetComponent<Renderer>().material.color = Color.green;
                 Elevator_door_EG.SetBool("open", false);
                 Invoke("openDoorOG",6);
                 _animator.SetBool("up", true);	

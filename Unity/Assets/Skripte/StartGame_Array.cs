@@ -4,19 +4,21 @@ using UnityEngine;
 
 public class StartGame_Array : MonoBehaviour
 {
-    public Vector3[] Arrayposition = new Vector3[4];
-	public Vector3 position0;
-	public Vector3 position1;
-	public Vector3 position2;
-	public Vector3 position3;
+    public Vector3[] FirePosition = new Vector3[7];
+	public Vector3[] PlayerPosition = new Vector3[4];
+	public Vector3[] TelephonePosition = new Vector3[4];
+
     public AudioSource FireAlarmEG;
     public AudioSource FireAlarmOG;
     public AudioSource TelephoneRing;
 
     public GameObject Fire;
+	public GameObject Player;
+	public GameObject Telephone;
 	private int RandomScene;
     private int RandomTime;
-    private int RandomFire;
+    private int RandomFirePosition;
+	private int RandomPlayerPosition;
 
 
  
@@ -29,8 +31,7 @@ public class StartGame_Array : MonoBehaviour
         if (RandomScene == 0)
         {
             Invoke("AlarmIsOnAtSceneStart", RandomTime);
-            Debug.Log(RandomTime + " Sekunden bis alarm");
-            Debug.Log("Feueralarm löst selbst aus");
+            Debug.Log("Feueralarm löst selbst aus nach" + RandomTime + " Sekunden");
         }
 
         if (RandomScene == 1)
@@ -38,19 +39,18 @@ public class StartGame_Array : MonoBehaviour
             Debug.Log("Feueralarm muss selbst ausgelöst werden");
         }
     
-
-		RandomFire = Random.Range(0,4);
-		//Debug.Log(RandomFire);
-		//Arrayposition[0]= position0;
-		//Arrayposition[1]= position1;
-		//Arrayposition[2]= position2;
-		//Arrayposition[3]= position3;
-
-
+		RandomFirePosition = Random.Range(0,7);
+		Debug.Log("Feuerposition" + RandomFirePosition);
+		Debug.Log(FirePosition[RandomFirePosition]);	
+		Fire.transform.position = FirePosition[RandomFirePosition];
 		
-		//Fire.transform.position = new Vector3(position2);
-		//Debug.Log(Arrayposition[RandomFire]);
-        
+
+		RandomPlayerPosition = Random.Range(0,4);
+		Debug.Log("Playerposition" + RandomPlayerPosition);
+		Debug.Log(FirePosition[RandomPlayerPosition]);	
+		Player.transform.position = PlayerPosition[RandomPlayerPosition];
+
+		Telephone.transform.position = TelephonePosition[RandomPlayerPosition];
     }
 
     void AlarmIsOnAtSceneStart()
@@ -58,11 +58,5 @@ public class StartGame_Array : MonoBehaviour
         FireAlarmEG.Play();
         FireAlarmOG.Play();
         TelephoneRing.Play();
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
     }
 }
