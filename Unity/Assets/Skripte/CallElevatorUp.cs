@@ -31,7 +31,10 @@ public class CallElevatorUp : MonoBehaviour
         }
     }
 
-
+	void openDoorOG()
+	{
+		Elevator_door_OG.SetBool("open", true);
+	}
 	
     // Update is called once per frame
     void Update()
@@ -42,7 +45,7 @@ public class CallElevatorUp : MonoBehaviour
             if (OVRInput.Get(OVRInput.Button.One))
             {
                 Elevator_door_EG.SetBool("open", false);
-                Elevator_door_OG.SetBool("open", true);
+                Invoke("openDoorOG",6);
                 _animator.SetBool("up", true);	
             }
         }

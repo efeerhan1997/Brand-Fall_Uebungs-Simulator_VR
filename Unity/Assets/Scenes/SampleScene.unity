@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 170076734}
-  m_IndirectSpecularColor: {r: 0.44657844, g: 0.49641222, b: 0.57481694, a: 1}
+  m_IndirectSpecularColor: {r: 0.44657898, g: 0.4964133, b: 0.5748178, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -431,7 +431,7 @@ BoxCollider:
   m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 5, y: 2.85, z: 3.5}
+  m_Size: {x: 6, y: 2.85, z: 3.5}
   m_Center: {x: 1.5156252, y: 1.609375, z: -0.13281253}
 --- !u!95 &5760869
 Animator:
@@ -13253,6 +13253,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Telephone_ring: {fileID: 749455213}
+  FireAlarmEG: {fileID: 1609222201}
+  FireAlarmOG: {fileID: 1182070862}
 --- !u!65 &811671091
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -15602,6 +15604,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Center.z
       value: 1000
+      objectReference: {fileID: 0}
+    - target: {fileID: 7480011967400221546, guid: 46e2e5d10a8cd2149b919ee394a1f3e7,
+        type: 3}
+      propertyPath: m_IsTrigger
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 46e2e5d10a8cd2149b919ee394a1f3e7, type: 3}
@@ -29792,8 +29799,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _animator: {fileID: 1294140752}
-  Elevator_door_EG: {fileID: 0}
-  Elevator_door_OG: {fileID: 0}
+  Elevator_door_EG: {fileID: 1552844119}
+  Elevator_door_OG: {fileID: 1140136763}
 --- !u!65 &1811570879
 BoxCollider:
   m_ObjectHideFlags: 0
