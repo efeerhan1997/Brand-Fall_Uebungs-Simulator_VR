@@ -73,7 +73,7 @@ MonoBehaviour:
   m_MinSize: {x: 683, y: 498}
   m_MaxSize: {x: 14004, y: 14048}
   vertical: 0
-  controlID: 115
+  controlID: 127
 --- !u!114 &4
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -603,19 +603,19 @@ MonoBehaviour:
     m_ShowAllHits: 0
     m_SearchArea: 1
     m_Folders:
-    - Assets
+    - Assets/AssetStoreOriginals/_SNAPS_PrototypingAssets/ModernOfficeInterior/Prefabs/Props
   m_ViewMode: 1
   m_StartGridSize: 64
   m_LastFolders:
-  - Assets
+  - Assets/AssetStoreOriginals/_SNAPS_PrototypingAssets/ModernOfficeInterior/Prefabs/Props
   m_LastFoldersGridSize: -1
   m_LastProjectPath: C:\Users\User\Documents\GitHub\Brand-Fall_Uebungs-Simulator_VR\Unity
   m_LockTracker:
     m_IsLocked: 0
   m_FolderTreeState:
     scrollPos: {x: 0, y: 79}
-    m_SelectedIDs: 00130000
-    m_LastClickedID: 4864
+    m_SelectedIDs: da370000
+    m_LastClickedID: 14298
     m_ExpandedIDs: 00000000001300000a1300000e1500009a1600004a17000076190000f0190000061b0000381b0000421d0000921e0000761f0000b42000007e210000da2200005223000016240000a62600002c27000048280000e0290000122c0000342d0000443000003631000050310000aa310000b23100001c3300004a34000002360000b4360000fa360000da370000de370000f4390000da3a00000e3b0000763b00007c69000000ca9a3b
     m_RenameOverlay:
       m_UserAcceptedRename: 0
@@ -671,7 +671,7 @@ MonoBehaviour:
   m_ListAreaState:
     m_SelectedInstanceIDs: 
     m_LastClickedInstanceID: 0
-    m_HadKeyboardFocusLastEvent: 0
+    m_HadKeyboardFocusLastEvent: 1
     m_ExpandedInstanceIDs: c6230000ca22010000000000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
@@ -765,7 +765,7 @@ MonoBehaviour:
       scrollPos: {x: 0, y: 0}
       m_SelectedIDs: 
       m_LastClickedID: 0
-      m_ExpandedIDs: c6fbffff
+      m_ExpandedIDs: 0ca8feffcaf0feff0cf9feff0a3fffffc6fbffff7a3c0000903c00009e3d0000ce3d0000e03e0000e83e00009c410000b4410000384300006c430000a2430000
       m_RenameOverlay:
         m_UserAcceptedRename: 0
         m_Name: 
@@ -820,9 +820,9 @@ MonoBehaviour:
   m_isRotationLocked: 0
   m_AudioPlay: 0
   m_Position:
-    m_Target: {x: -95.39513, y: -28.858574, z: 7.2355423}
+    m_Target: {x: -78.16282, y: -1.7399057, z: -59.17817}
     speed: 2
-    m_Value: {x: -95.39513, y: -28.858574, z: 7.2355423}
+    m_Value: {x: -78.16282, y: -1.7399057, z: -59.17817}
   m_RenderMode: 0
   m_CameraMode:
     drawMode: 0
@@ -850,13 +850,13 @@ MonoBehaviour:
       speed: 2
       m_Value: 0
   m_Rotation:
-    m_Target: {x: 0.056660432, y: -0.77905566, z: 0.07115506, w: 0.6203215}
+    m_Target: {x: 0.015415588, y: -0.8807454, z: 0.028729094, w: 0.47246638}
     speed: 2
-    m_Value: {x: 0.056660436, y: -0.7790557, z: 0.071155064, w: 0.6203216}
+    m_Value: {x: 0.015415589, y: -0.8807455, z: 0.028729096, w: 0.4724664}
   m_Size:
-    m_Target: 216.87953
+    m_Target: 236.35828
     speed: 2
-    m_Value: 216.87953
+    m_Value: 236.35828
   m_Ortho:
     m_Target: 0
     speed: 2
