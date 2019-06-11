@@ -2,18 +2,11 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class TESTETHAN : MonoBehaviour
-{
-	public Animator _animator;
+public class PerosonMoveToMeetingPlace : MonoBehaviour
+{	
     private bool _isInsideTrigger = false;
-	//private bool _isOut = false;
-
-	//public Material matofobject;
-	//public Color newcolor;
-	//public KeyCode changecolor;
-
-	private int random;
-
+    private int random;
+    public Vector3 MeetingPoint; 
 
 	
     void OnTriggerEnter(Collider other)
@@ -23,7 +16,7 @@ public class TESTETHAN : MonoBehaviour
 
             _isInsideTrigger = true;
 			random = Random.Range(0,2);
-			Debug.Log(random);
+			
         }
     }
 
@@ -48,8 +41,9 @@ public class TESTETHAN : MonoBehaviour
             {					
 				if (random == 0)
 				{
+                    
 					GetComponent<Renderer> ().material.color = Color.green;
-					_animator.SetBool("out", true);
+                    transform.position = MeetingPoint;
 					
 				}
 

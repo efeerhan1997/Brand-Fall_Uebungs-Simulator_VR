@@ -7,6 +7,10 @@ public class StartGame_Array : MonoBehaviour
     public Vector3[] FirePosition = new Vector3[7];
 	public Vector3[] PlayerPosition = new Vector3[4];
 	public Vector3[] TelephonePosition = new Vector3[4];
+    public Vector3[] PersonEGPosition = new Vector3[5];
+    public Vector3[] PersonGroupEGPosition = new Vector3[5];
+    public Vector3[] PersonOGPosition = new Vector3[5];
+    public Vector3[] PersonGroupOGPosition = new Vector3[5];
 
     public AudioSource FireAlarmEG;
     public AudioSource FireAlarmOG;
@@ -15,16 +19,23 @@ public class StartGame_Array : MonoBehaviour
     public GameObject Fire;
 	public GameObject Player;
 	public GameObject Telephone;
-	private int RandomScene;
+    public GameObject PersonEG;
+    public GameObject PersonGroupEG;
+    public GameObject PersonOG;
+    public GameObject PersonGroupOG;
+
+    private int RandomScene;
     private int RandomTime;
     private int RandomFirePosition;
 	private int RandomPlayerPosition;
+    private int RandomPersonEGPosition;
+    private int RandomPersonGroupEGPosition;
+    private int RandomPersonOGPosition;
+    private int RandomPersonGroupOGPosition;
 
 
- 
-   
- 
-	void Awake()
+
+    void Awake()
 	{
         RandomTime = Random.Range(15, 45);
         RandomScene = Random.Range(0, 2);
@@ -51,6 +62,27 @@ public class StartGame_Array : MonoBehaviour
 		Player.transform.position = PlayerPosition[RandomPlayerPosition];
 
 		Telephone.transform.position = TelephonePosition[RandomPlayerPosition];
+
+        RandomPersonEGPosition = Random.Range(0, 5);
+        Debug.Log("PersonEG Position" + RandomPersonEGPosition);
+        Debug.Log(PersonEGPosition[RandomPersonEGPosition]);
+        PersonEG.transform.position = PersonEGPosition[RandomPersonEGPosition];
+
+        RandomPersonGroupEGPosition = Random.Range(0, 5);
+        Debug.Log("PersonGroupEG Position" + RandomPersonGroupEGPosition);
+        Debug.Log(PersonGroupEGPosition[RandomPersonGroupEGPosition]);
+        PersonGroupEG.transform.position = PersonGroupEGPosition[RandomPersonGroupEGPosition];
+
+        RandomPersonOGPosition = Random.Range(0, 5);
+        Debug.Log("PersonOG Position" + RandomPersonOGPosition);
+        Debug.Log(PersonOGPosition[RandomPersonOGPosition]);
+        PersonOG.transform.position = PersonOGPosition[RandomPersonOGPosition];
+
+        RandomPersonGroupOGPosition = Random.Range(0, 5);
+        Debug.Log("PersonGroupOG Position" + RandomPersonGroupOGPosition);
+        Debug.Log(PersonGroupOGPosition[RandomPersonGroupOGPosition]);
+        PersonGroupOG.transform.position = PersonGroupOGPosition[RandomPersonGroupOGPosition];
+   
     }
 
     void AlarmIsOnAtSceneStart()
