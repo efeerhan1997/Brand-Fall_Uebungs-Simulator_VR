@@ -7,10 +7,10 @@ public class StartGame_Array : MonoBehaviour
     public Vector3[] FirePosition = new Vector3[7];
 	public Vector3[] PlayerPosition = new Vector3[4];
 	public Vector3[] TelephonePosition = new Vector3[4];
-    public Vector3[] PersonEGPosition = new Vector3[5];
-    public Vector3[] PersonGroupEGPosition = new Vector3[5];
-    public Vector3[] PersonOGPosition = new Vector3[5];
-    public Vector3[] PersonGroupOGPosition = new Vector3[5];
+    public Vector3[] PersonEG1Position = new Vector3[5];
+    public Vector3[] PersonEG2Position = new Vector3[5];
+    public Vector3[] PersonOG1Position = new Vector3[5];
+    public Vector3[] PersonOG2Position = new Vector3[5];
 
     public AudioSource FireAlarmEG;
     public AudioSource FireAlarmOG;
@@ -19,19 +19,19 @@ public class StartGame_Array : MonoBehaviour
     public GameObject Fire;
 	public GameObject Player;
 	public GameObject Telephone;
-    public GameObject PersonEG;
-    public GameObject PersonGroupEG;
-    public GameObject PersonOG;
-    public GameObject PersonGroupOG;
+    public GameObject PersonEG1;
+    public GameObject PersonEG2;
+    public GameObject PersonOG1;
+    public GameObject PersonOG2;
 
     private int RandomScene;
     private int RandomTime;
     private int RandomFirePosition;
 	private int RandomPlayerPosition;
-    private int RandomPersonEGPosition;
-    private int RandomPersonGroupEGPosition;
-    private int RandomPersonOGPosition;
-    private int RandomPersonGroupOGPosition;
+    private int RandomPersonEG1Position;
+    private int RandomPersonEG2Position;
+    private int RandomPersonOG1Position;
+    private int RandomPersonOG2Position;
 
 
 
@@ -63,25 +63,25 @@ public class StartGame_Array : MonoBehaviour
 
 		Telephone.transform.position = TelephonePosition[RandomPlayerPosition];
 
-        RandomPersonEGPosition = Random.Range(0, 5);
-        Debug.Log("PersonEG Position" + RandomPersonEGPosition);
-        Debug.Log(PersonEGPosition[RandomPersonEGPosition]);
-        PersonEG.transform.position = PersonEGPosition[RandomPersonEGPosition];
+        RandomPersonEG1Position = Random.Range(0, 5);
+        Debug.Log("PersonEG1 Position " + RandomPersonEG1Position);
+        Debug.Log(PersonEG1Position[RandomPersonEG1Position]);
+        PersonEG1.transform.position = PersonEG1Position[RandomPersonEG1Position];
 
-        RandomPersonGroupEGPosition = Random.Range(0, 5);
-        Debug.Log("PersonGroupEG Position" + RandomPersonGroupEGPosition);
-        Debug.Log(PersonGroupEGPosition[RandomPersonGroupEGPosition]);
-        PersonGroupEG.transform.position = PersonGroupEGPosition[RandomPersonGroupEGPosition];
+        RandomPersonEG2Position = Random.Range(0, 5);
+        Debug.Log("PersonEG2 Position " + RandomPersonEG2Position);
+        Debug.Log(PersonEG2Position[RandomPersonEG2Position]);
+        PersonEG2.transform.position = PersonEG1Position[RandomPersonEG2Position];
 
-        RandomPersonOGPosition = Random.Range(0, 5);
-        Debug.Log("PersonOG Position" + RandomPersonOGPosition);
-        Debug.Log(PersonOGPosition[RandomPersonOGPosition]);
-        PersonOG.transform.position = PersonOGPosition[RandomPersonOGPosition];
+        RandomPersonOG1Position = Random.Range(0, 5);
+        Debug.Log("PersonOG1 Position " + RandomPersonOG1Position);
+        Debug.Log(PersonOG1Position[RandomPersonOG1Position]);
+        PersonOG1.transform.position = PersonOG1Position[RandomPersonOG1Position];
 
-        RandomPersonGroupOGPosition = Random.Range(0, 5);
-        Debug.Log("PersonGroupOG Position" + RandomPersonGroupOGPosition);
-        Debug.Log(PersonGroupOGPosition[RandomPersonGroupOGPosition]);
-        PersonGroupOG.transform.position = PersonGroupOGPosition[RandomPersonGroupOGPosition];
+        RandomPersonOG2Position = Random.Range(0, 5);
+        Debug.Log("PersonOG2 Position " + RandomPersonOG2Position);
+        Debug.Log(PersonOG2Position[RandomPersonOG2Position]);
+        PersonOG2.transform.position = PersonOG2Position[RandomPersonOG2Position];
    
     }
 
