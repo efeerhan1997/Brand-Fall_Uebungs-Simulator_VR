@@ -33,6 +33,11 @@ public class ElevatorUpDown : MonoBehaviour
         }
     }
 
+    void ChangeColorBack()
+    {
+        GetComponent<Renderer>().material.color = Color.white;
+    }
+
 
     // Update is called once per frame
     void Update()
@@ -42,6 +47,9 @@ public class ElevatorUpDown : MonoBehaviour
         {
             if (OVRInput.Get(OVRInput.Button.One))
             {
+                GetComponent<Renderer>().material.color = Color.green;
+                Invoke("ChangeColorBack", 10);
+
                 _isUp = !_isUp;
 
                 _animator.SetBool("up", _isUp);

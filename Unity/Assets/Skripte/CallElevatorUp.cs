@@ -34,10 +34,14 @@ public class CallElevatorUp : MonoBehaviour
 	void openDoorOG()
 	{
 		Elevator_door_OG.SetBool("open", true);
-	}
-	
-    // Update is called once per frame
-    void Update()
+    }
+    void ChangeColorBack()
+    {
+        GetComponent<Renderer>().material.color = Color.white;
+    }
+
+// Update is called once per frame
+void Update()
     {
 
         if (_isInsideTrigger)
@@ -45,6 +49,7 @@ public class CallElevatorUp : MonoBehaviour
             if (OVRInput.Get(OVRInput.Button.One))
             {
 				GetComponent<Renderer>().material.color = Color.green;
+                Invoke("ChangeColorBack", 10);
                 Elevator_door_EG.SetBool("open", false);
                 Invoke("openDoorOG",6);
                 _animator.SetBool("up", true);	
