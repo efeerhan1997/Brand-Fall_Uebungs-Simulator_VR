@@ -8,6 +8,8 @@ public class PersonMoveToMeetingPoint : MonoBehaviour
     private int random;
     public Vector3 MeetingPoint;
     public GameObject Person;
+    public AudioSource FireAlarm;
+
 
 
 
@@ -45,7 +47,7 @@ public class PersonMoveToMeetingPoint : MonoBehaviour
 
         if (_isInsideTrigger)
         {
-            if (OVRInput.Get(OVRInput.Button.One))
+            if (OVRInput.Get(OVRInput.Button.One) && FireAlarm.isPlaying==true)
             {
                 if (random == 0)
                 {
