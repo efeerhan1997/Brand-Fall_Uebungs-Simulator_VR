@@ -61,7 +61,9 @@ public class StartGame_Array : MonoBehaviour
 		Debug.Log(FirePosition[RandomPlayerPosition]);	
 		Player.transform.position = PlayerPosition[RandomPlayerPosition];
 
-		Telephone.transform.position = TelephonePosition[RandomPlayerPosition];
+        Debug.Log("Telephoneposition" + RandomPlayerPosition);
+        Debug.Log(TelephonePosition[RandomPlayerPosition]);
+        Telephone.transform.position = TelephonePosition[RandomPlayerPosition];
 
         RandomPersonEG1Position = Random.Range(0, 5);
         Debug.Log("PersonEG1 Position " + RandomPersonEG1Position);
