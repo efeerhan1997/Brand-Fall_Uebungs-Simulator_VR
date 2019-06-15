@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 170076734}
-  m_IndirectSpecularColor: {r: 0.44657844, g: 0.49641222, b: 0.57481694, a: 1}
+  m_IndirectSpecularColor: {r: 0.44657898, g: 0.4964133, b: 0.5748178, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -39352,7 +39352,7 @@ MonoBehaviour:
   - {x: 71.58, y: 10.179, z: 29.6}
   - {x: 42.5, y: 10.179, z: 56.68}
   TelephonePosition:
-  - {x: 77.9, y: 9.9, z: 45.2}
+  - {x: 77.9, y: 9.9, z: 57}
   - {x: 78.3, y: 9.9, z: 53}
   - {x: 77.9, y: 9.9, z: 27.15}
   - {x: 41.2, y: 9.9, z: 45.2}
@@ -67394,7 +67394,7 @@ AudioSource:
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 8300000, guid: ac779198fe7b52a4d93073b2cf707514, type: 3}
-  m_PlayOnAwake: 1
+  m_PlayOnAwake: 0
   m_Volume: 0.2
   m_Pitch: 1
   Loop: 0
