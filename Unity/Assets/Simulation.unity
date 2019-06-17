@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 170076734}
-  m_IndirectSpecularColor: {r: 0.44657838, g: 0.49641234, b: 0.57481676, a: 1}
+  m_IndirectSpecularColor: {r: 0.44657898, g: 0.4964133, b: 0.5748178, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -506,6 +506,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Neo_Window_04
       objectReference: {fileID: 0}
+    - target: {fileID: 1698957219889860, guid: 7185e7270a77b1b4587cedd0415953f9, type: 3}
+      propertyPath: m_TagString
+      value: Target
+      objectReference: {fileID: 0}
     - target: {fileID: 4602989943278506, guid: 7185e7270a77b1b4587cedd0415953f9, type: 3}
       propertyPath: m_LocalPosition.x
       value: 10.513078
@@ -621,6 +625,20 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 5760865}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &5760871
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5760866}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e2c4fc36276ff476fa40f09fc093312b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  standardMaterial: {fileID: 2100000, guid: 15cb6b096bb78c7479c93c6e26153387, type: 2}
+  changedMaterial: {fileID: 2100000, guid: 3d2110dabe6f73043ba4404830e26f36, type: 2}
 --- !u!1001 &7100776
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2416,7 +2434,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 100000, guid: 5e9e851c0e142814dac026a256ba2ac0, type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 100000, guid: 5e9e851c0e142814dac026a256ba2ac0, type: 3}
       propertyPath: m_TagString
@@ -4284,6 +4302,10 @@ PrefabInstance:
     - target: {fileID: 1191596092261060, guid: 548b55d3e2f945942be6ac7612199877, type: 3}
       propertyPath: m_Name
       value: Neo_Door_01 (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1191596092261060, guid: 548b55d3e2f945942be6ac7612199877, type: 3}
+      propertyPath: m_TagString
+      value: Target
       objectReference: {fileID: 0}
     - target: {fileID: 4462618341929852, guid: 548b55d3e2f945942be6ac7612199877, type: 3}
       propertyPath: m_LocalPosition.x
@@ -9140,6 +9162,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Neo_Window_04
       objectReference: {fileID: 0}
+    - target: {fileID: 1698957219889860, guid: 7185e7270a77b1b4587cedd0415953f9, type: 3}
+      propertyPath: m_TagString
+      value: Target
+      objectReference: {fileID: 0}
     - target: {fileID: 4602989943278506, guid: 7185e7270a77b1b4587cedd0415953f9, type: 3}
       propertyPath: m_LocalPosition.x
       value: 9.072078
@@ -9255,6 +9281,20 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 278368853}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &278368859
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 278368854}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e2c4fc36276ff476fa40f09fc093312b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  standardMaterial: {fileID: 2100000, guid: 15cb6b096bb78c7479c93c6e26153387, type: 2}
+  changedMaterial: {fileID: 2100000, guid: 3d2110dabe6f73043ba4404830e26f36, type: 2}
 --- !u!1001 &278376836
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -9266,6 +9306,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Feueralarm (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 45845740853983688, guid: 46e2e5d10a8cd2149b919ee394a1f3e7,
+        type: 3}
+      propertyPath: m_TagString
+      value: Target
       objectReference: {fileID: 0}
     - target: {fileID: 8453051392302344807, guid: 46e2e5d10a8cd2149b919ee394a1f3e7,
         type: 3}
@@ -9386,6 +9431,20 @@ GameObject:
     type: 3}
   m_PrefabInstance: {fileID: 278376836}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &278376839
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 278376838}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e2c4fc36276ff476fa40f09fc093312b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  standardMaterial: {fileID: 2100000, guid: 2ca5fda9ea3218c47b38af79005d8212, type: 2}
+  changedMaterial: {fileID: 2100000, guid: 9b5cbd1b1055441b9bf6d17c1fd95aa2, type: 2}
 --- !u!114 &278376840
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -10447,6 +10506,10 @@ PrefabInstance:
     - target: {fileID: 1191596092261060, guid: 548b55d3e2f945942be6ac7612199877, type: 3}
       propertyPath: m_Name
       value: Neo_Door_01 (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1191596092261060, guid: 548b55d3e2f945942be6ac7612199877, type: 3}
+      propertyPath: m_TagString
+      value: Target
       objectReference: {fileID: 0}
     - target: {fileID: 4462618341929852, guid: 548b55d3e2f945942be6ac7612199877, type: 3}
       propertyPath: m_LocalPosition.x
@@ -15705,6 +15768,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Feueralarm (3)
       objectReference: {fileID: 0}
+    - target: {fileID: 45845740853983688, guid: 46e2e5d10a8cd2149b919ee394a1f3e7,
+        type: 3}
+      propertyPath: m_TagString
+      value: Target
+      objectReference: {fileID: 0}
     - target: {fileID: 8453051392302344807, guid: 46e2e5d10a8cd2149b919ee394a1f3e7,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -15824,6 +15892,20 @@ GameObject:
     type: 3}
   m_PrefabInstance: {fileID: 455528783}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &455528786
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 455528785}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e2c4fc36276ff476fa40f09fc093312b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  standardMaterial: {fileID: 2100000, guid: 2ca5fda9ea3218c47b38af79005d8212, type: 2}
+  changedMaterial: {fileID: 2100000, guid: 9b5cbd1b1055441b9bf6d17c1fd95aa2, type: 2}
 --- !u!114 &455528787
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -16408,6 +16490,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Feueralarm (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 45845740853983688, guid: 46e2e5d10a8cd2149b919ee394a1f3e7,
+        type: 3}
+      propertyPath: m_TagString
+      value: Target
+      objectReference: {fileID: 0}
     - target: {fileID: 8453051392302344807, guid: 46e2e5d10a8cd2149b919ee394a1f3e7,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -16527,6 +16614,20 @@ GameObject:
     type: 3}
   m_PrefabInstance: {fileID: 473326556}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &473326559
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 473326558}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e2c4fc36276ff476fa40f09fc093312b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  standardMaterial: {fileID: 2100000, guid: 2ca5fda9ea3218c47b38af79005d8212, type: 2}
+  changedMaterial: {fileID: 2100000, guid: 9b5cbd1b1055441b9bf6d17c1fd95aa2, type: 2}
 --- !u!114 &473326560
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -17098,6 +17199,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Neo_Door_01 (4)
       objectReference: {fileID: 0}
+    - target: {fileID: 1191596092261060, guid: 548b55d3e2f945942be6ac7612199877, type: 3}
+      propertyPath: m_TagString
+      value: Target
+      objectReference: {fileID: 0}
     - target: {fileID: 4462618341929852, guid: 548b55d3e2f945942be6ac7612199877, type: 3}
       propertyPath: m_LocalPosition.x
       value: -13.405923
@@ -17108,7 +17213,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4462618341929852, guid: 548b55d3e2f945942be6ac7612199877, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 1.4489651
+      value: 1.471
       objectReference: {fileID: 0}
     - target: {fileID: 4462618341929852, guid: 548b55d3e2f945942be6ac7612199877, type: 3}
       propertyPath: m_LocalRotation.x
@@ -17200,6 +17305,20 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 492128793}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &492128799
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 492128794}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e2c4fc36276ff476fa40f09fc093312b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  standardMaterial: {fileID: 2100000, guid: 15cb6b096bb78c7479c93c6e26153387, type: 2}
+  changedMaterial: {fileID: 2100000, guid: 3d2110dabe6f73043ba4404830e26f36, type: 2}
 --- !u!1001 &492415254
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -21796,6 +21915,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Neo_Door_01
       objectReference: {fileID: 0}
+    - target: {fileID: 1191596092261060, guid: 548b55d3e2f945942be6ac7612199877, type: 3}
+      propertyPath: m_TagString
+      value: Target
+      objectReference: {fileID: 0}
     - target: {fileID: 4462618341929852, guid: 548b55d3e2f945942be6ac7612199877, type: 3}
       propertyPath: m_LocalPosition.x
       value: -6.2506175
@@ -24844,6 +24967,10 @@ PrefabInstance:
     - target: {fileID: 1191596092261060, guid: 548b55d3e2f945942be6ac7612199877, type: 3}
       propertyPath: m_Name
       value: Neo_Door_01 (8)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1191596092261060, guid: 548b55d3e2f945942be6ac7612199877, type: 3}
+      propertyPath: m_TagString
+      value: Target
       objectReference: {fileID: 0}
     - target: {fileID: 4462618341929852, guid: 548b55d3e2f945942be6ac7612199877, type: 3}
       propertyPath: m_LocalPosition.x
@@ -36624,17 +36751,17 @@ PrefabInstance:
     - target: {fileID: 65633166700472388, guid: 238ac8785f3f5b947941aa4fd6e0ce86,
         type: 3}
       propertyPath: m_Size.x
-      value: 3.0000002
+      value: 3.0000005
       objectReference: {fileID: 0}
     - target: {fileID: 65633166700472388, guid: 238ac8785f3f5b947941aa4fd6e0ce86,
         type: 3}
       propertyPath: m_Size.z
-      value: 3.0000002
+      value: 3.004817
       objectReference: {fileID: 0}
     - target: {fileID: 65633166700472388, guid: 238ac8785f3f5b947941aa4fd6e0ce86,
         type: 3}
       propertyPath: m_Center.z
-      value: 1.4999999
+      value: 1.5024081
       objectReference: {fileID: 0}
     - target: {fileID: 65633166700472388, guid: 238ac8785f3f5b947941aa4fd6e0ce86,
         type: 3}
@@ -44490,6 +44617,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Neo_Door_01 (6)
       objectReference: {fileID: 0}
+    - target: {fileID: 1191596092261060, guid: 548b55d3e2f945942be6ac7612199877, type: 3}
+      propertyPath: m_TagString
+      value: Target
+      objectReference: {fileID: 0}
     - target: {fileID: 4462618341929852, guid: 548b55d3e2f945942be6ac7612199877, type: 3}
       propertyPath: m_LocalPosition.x
       value: 10.985674
@@ -44592,6 +44723,20 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 1265867034}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &1265867040
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1265867035}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e2c4fc36276ff476fa40f09fc093312b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  standardMaterial: {fileID: 2100000, guid: 15cb6b096bb78c7479c93c6e26153387, type: 2}
+  changedMaterial: {fileID: 2100000, guid: 3d2110dabe6f73043ba4404830e26f36, type: 2}
 --- !u!1001 &1267636615
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -44705,6 +44850,20 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 5.59, y: 2.25, z: 7.87}
   m_Center: {x: 0.6250001, y: 1.125, z: -0.0019531255}
+--- !u!114 &1268747912
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1268747908}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e2c4fc36276ff476fa40f09fc093312b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  standardMaterial: {fileID: 2100000, guid: 15cb6b096bb78c7479c93c6e26153387, type: 2}
+  changedMaterial: {fileID: 2100000, guid: 3d2110dabe6f73043ba4404830e26f36, type: 2}
 --- !u!1001 &1269431338
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -50916,6 +51075,20 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!114 &1467780133
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1467780129}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e2c4fc36276ff476fa40f09fc093312b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  standardMaterial: {fileID: 2100000, guid: 15cb6b096bb78c7479c93c6e26153387, type: 2}
+  changedMaterial: {fileID: 2100000, guid: 3d2110dabe6f73043ba4404830e26f36, type: 2}
 --- !u!1001 &1468221944
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -51829,7 +52002,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 100008, guid: ce816f2e6abb0504092c23ed9b970dfd, type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 100008, guid: ce816f2e6abb0504092c23ed9b970dfd, type: 3}
       propertyPath: m_TagString
@@ -51837,15 +52010,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 400006, guid: ce816f2e6abb0504092c23ed9b970dfd, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 71.58
+      value: 53.137
       objectReference: {fileID: 0}
     - target: {fileID: 400006, guid: ce816f2e6abb0504092c23ed9b970dfd, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 10.537
+      value: 10.879
       objectReference: {fileID: 0}
     - target: {fileID: 400006, guid: ce816f2e6abb0504092c23ed9b970dfd, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 29.599
+      value: 45.024
       objectReference: {fileID: 0}
     - target: {fileID: 400006, guid: ce816f2e6abb0504092c23ed9b970dfd, type: 3}
       propertyPath: m_LocalRotation.x
@@ -53487,6 +53660,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Telephone
       objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 1433f64b2b28bad4883bf2379a49e079, type: 3}
+      propertyPath: m_TagString
+      value: Target
+      objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 1433f64b2b28bad4883bf2379a49e079, type: 3}
       propertyPath: m_LocalPosition.x
       value: 41.2
@@ -53670,6 +53847,20 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 1546109240}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &1546109246
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1546109241}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e2c4fc36276ff476fa40f09fc093312b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  standardMaterial: {fileID: 2100000, guid: 7eda147a0f6ac43d293c3786dbd493b9, type: 2}
+  changedMaterial: {fileID: 2100000, guid: 3d2110dabe6f73043ba4404830e26f36, type: 2}
 --- !u!1001 &1552844117
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -54972,6 +55163,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Neo_Door_01 (3)
       objectReference: {fileID: 0}
+    - target: {fileID: 1191596092261060, guid: 548b55d3e2f945942be6ac7612199877, type: 3}
+      propertyPath: m_TagString
+      value: Target
+      objectReference: {fileID: 0}
     - target: {fileID: 4462618341929852, guid: 548b55d3e2f945942be6ac7612199877, type: 3}
       propertyPath: m_LocalPosition.x
       value: -10.326922
@@ -55074,6 +55269,20 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 1600459577}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &1600459583
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1600459578}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e2c4fc36276ff476fa40f09fc093312b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  standardMaterial: {fileID: 2100000, guid: 15cb6b096bb78c7479c93c6e26153387, type: 2}
+  changedMaterial: {fileID: 2100000, guid: 3d2110dabe6f73043ba4404830e26f36, type: 2}
 --- !u!1001 &1600813523
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -57712,6 +57921,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Neo_Window_04
       objectReference: {fileID: 0}
+    - target: {fileID: 1698957219889860, guid: 7185e7270a77b1b4587cedd0415953f9, type: 3}
+      propertyPath: m_TagString
+      value: Target
+      objectReference: {fileID: 0}
     - target: {fileID: 4602989943278506, guid: 7185e7270a77b1b4587cedd0415953f9, type: 3}
       propertyPath: m_LocalPosition.x
       value: 7.4340773
@@ -57827,6 +58040,20 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 1656610202}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &1656610208
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1656610203}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e2c4fc36276ff476fa40f09fc093312b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  standardMaterial: {fileID: 2100000, guid: 15cb6b096bb78c7479c93c6e26153387, type: 2}
+  changedMaterial: {fileID: 2100000, guid: 3d2110dabe6f73043ba4404830e26f36, type: 2}
 --- !u!1 &1656652225
 GameObject:
   m_ObjectHideFlags: 0
@@ -58229,6 +58456,26 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 1658761769}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1659358496 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1191596092261060, guid: 548b55d3e2f945942be6ac7612199877,
+    type: 3}
+  m_PrefabInstance: {fileID: 2052215966}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1659358497
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1659358496}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e2c4fc36276ff476fa40f09fc093312b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  standardMaterial: {fileID: 2100000, guid: 15cb6b096bb78c7479c93c6e26153387, type: 2}
+  changedMaterial: {fileID: 2100000, guid: 3d2110dabe6f73043ba4404830e26f36, type: 2}
 --- !u!1001 &1668478017
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -60527,7 +60774,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   standardMaterial: {fileID: 2100000, guid: 15cb6b096bb78c7479c93c6e26153387, type: 2}
-  changedMaterial: {fileID: 2100000, guid: 8621dfcb3dbf229428e45425021e0875, type: 2}
+  changedMaterial: {fileID: 2100000, guid: 3d2110dabe6f73043ba4404830e26f36, type: 2}
 --- !u!64 &1741508713
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -64601,6 +64848,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Neo_Door_01 (2)
       objectReference: {fileID: 0}
+    - target: {fileID: 1191596092261060, guid: 548b55d3e2f945942be6ac7612199877, type: 3}
+      propertyPath: m_TagString
+      value: Target
+      objectReference: {fileID: 0}
     - target: {fileID: 4462618341929852, guid: 548b55d3e2f945942be6ac7612199877, type: 3}
       propertyPath: m_LocalPosition.x
       value: -7.4896183
@@ -64703,6 +64954,20 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 1877044224}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &1877044230
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1877044225}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e2c4fc36276ff476fa40f09fc093312b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  standardMaterial: {fileID: 2100000, guid: 15cb6b096bb78c7479c93c6e26153387, type: 2}
+  changedMaterial: {fileID: 2100000, guid: 3d2110dabe6f73043ba4404830e26f36, type: 2}
 --- !u!1 &1877860693 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 100008, guid: ce816f2e6abb0504092c23ed9b970dfd,
@@ -64736,7 +65001,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   direction: {fileID: 795829250}
-  maxHitDistance: 20
+  maxHitDistance: 0.5
 --- !u!1001 &1879736969
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -67902,6 +68167,26 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 0.31250003, y: 3, z: 3.000001}
   m_Center: {x: 0, y: 1.4999998, z: 1.500001}
+--- !u!1 &1937486789 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1191596092261060, guid: 548b55d3e2f945942be6ac7612199877,
+    type: 3}
+  m_PrefabInstance: {fileID: 114649751}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1937486790
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1937486789}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e2c4fc36276ff476fa40f09fc093312b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  standardMaterial: {fileID: 2100000, guid: 15cb6b096bb78c7479c93c6e26153387, type: 2}
+  changedMaterial: {fileID: 2100000, guid: 3d2110dabe6f73043ba4404830e26f36, type: 2}
 --- !u!1001 &1938685413
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -71777,6 +72062,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Neo_Door_01
       objectReference: {fileID: 0}
+    - target: {fileID: 1191596092261060, guid: 548b55d3e2f945942be6ac7612199877, type: 3}
+      propertyPath: m_TagString
+      value: Target
+      objectReference: {fileID: 0}
     - target: {fileID: 4462618341929852, guid: 548b55d3e2f945942be6ac7612199877, type: 3}
       propertyPath: m_LocalPosition.x
       value: 25.63675
@@ -74143,6 +74432,20 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 3, y: 2.25, z: 2.5}
   m_Center: {x: 0.625, y: 1.125, z: -0.001953125}
+--- !u!114 &2128710372
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2128710368}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e2c4fc36276ff476fa40f09fc093312b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  standardMaterial: {fileID: 2100000, guid: 15cb6b096bb78c7479c93c6e26153387, type: 2}
+  changedMaterial: {fileID: 2100000, guid: 3d2110dabe6f73043ba4404830e26f36, type: 2}
 --- !u!1001 &2133240637
 PrefabInstance:
   m_ObjectHideFlags: 0

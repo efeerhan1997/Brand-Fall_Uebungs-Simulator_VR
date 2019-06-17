@@ -9,7 +9,7 @@ public void PlayGame()
     {
         if (OVRInput.Get(OVRInput.Button.One))
         {
-            SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + - 2);
+            SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex -2);
         }
 
     }

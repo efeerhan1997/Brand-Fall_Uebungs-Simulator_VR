@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 public class HealthBar : MonoBehaviour
 {
@@ -30,6 +31,7 @@ public class HealthBar : MonoBehaviour
         {
             hitpoint = 0;
             Debug.Log("Dead!");
+			SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 2);
         }
 
         UpdateHealthbar();
