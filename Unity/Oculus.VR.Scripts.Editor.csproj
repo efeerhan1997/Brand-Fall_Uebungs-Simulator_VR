@@ -291,11 +291,11 @@
  <Reference Include="PackageManagerAssembly">
  <HintPath>C:/Users/oculus/Documents/GitHub/Brand-Fall_Uebungs-Simulator_VR/Unity/Assets/EffectExamples/Editor/PackageManagerAssembly/PackageManagerAssembly.dll</HintPath>
  </Reference>
- <Reference Include="TextMeshPro-2017.3-Runtime">
- <HintPath>C:/Users/oculus/Documents/GitHub/Brand-Fall_Uebungs-Simulator_VR/Unity/Assets/TextMesh Pro/Plugins/Editor DLL/TextMeshPro-2017.3-Runtime.dll</HintPath>
- </Reference>
  <Reference Include="TextMeshPro-2017.3-Editor">
  <HintPath>C:/Users/oculus/Documents/GitHub/Brand-Fall_Uebungs-Simulator_VR/Unity/Assets/TextMesh Pro/Plugins/Editor DLL/TextMeshPro-2017.3-Editor.dll</HintPath>
+ </Reference>
+ <Reference Include="TextMeshPro-2017.3-Runtime">
+ <HintPath>C:/Users/oculus/Documents/GitHub/Brand-Fall_Uebungs-Simulator_VR/Unity/Assets/TextMesh Pro/Plugins/Editor DLL/TextMeshPro-2017.3-Runtime.dll</HintPath>
  </Reference>
  <Reference Include="mscorlib">
  <HintPath>C:/Program Files/Unity/Editor/Data/MonoBleedingEdge/lib/mono/2.0-api/mscorlib.dll</HintPath>
