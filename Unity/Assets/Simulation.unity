@@ -62663,6 +62663,7 @@ MonoBehaviour:
   _animator: {fileID: 1294140752}
   Elevator_door_EG: {fileID: 1552844119}
   Elevator_door_OG: {fileID: 1140136763}
+  FireAlarm: {fileID: 1609222201}
 --- !u!65 &1811570879
 BoxCollider:
   m_ObjectHideFlags: 0

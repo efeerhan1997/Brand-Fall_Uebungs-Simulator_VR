@@ -1,12 +1,16 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 public class ElevatorUpDown : MonoBehaviour
 {
     public Animator _animator;
     public Animator Elevator_door_EG;
     public Animator Elevator_door_OG;
+    public AudioSource FireAlarm;
+    private int RandomCrash;
     private bool _isInsideTrigger = false;
 
     private bool _isUp = false;
@@ -38,11 +42,15 @@ public class ElevatorUpDown : MonoBehaviour
         GetComponent<Renderer>().material.color = Color.white;
     }
 
+    void ElevatorCrash()
+    {
+        Debug.Log("Aufzug ist abgestürzt!");
+        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 2);
+    }
 
-    // Update is called once per frame
+// Update is called once per frame
     void Update()
     {
-
         if (_isInsideTrigger)
         {
             if (OVRInput.Get(OVRInput.Button.One))
@@ -52,20 +60,51 @@ public class ElevatorUpDown : MonoBehaviour
 
                 _isUp = !_isUp;
 
-                _animator.SetBool("up", _isUp);
-
-                if (_isUp == true)
+                if (FireAlarm.isPlaying == true)
                 {
-                    Elevator_door_EG.SetBool("open", false);
-                    Elevator_door_OG.SetBool("open", true);
+                    RandomCrash = Random.Range(0, 2);
+                    if (RandomCrash == 0)
+                    {
+                        Invoke("ElevatorCrash", 5);
+                    }
+                    else
+                    {
+                        _animator.SetBool("up", _isUp);
+
+                        if (_isUp == true)
+                        {
+                            Elevator_door_EG.SetBool("open", false);
+                            Elevator_door_OG.SetBool("open", true);
+                        }
+                        else
+                        {
+                            Elevator_door_EG.SetBool("open", true);
+                            Elevator_door_OG.SetBool("open", false);
+                        }
+                    }
+
                 }
+
                 else
                 {
-                    Elevator_door_EG.SetBool("open", true);
-                    Elevator_door_OG.SetBool("open", false);
+                    _animator.SetBool("up", _isUp);
+
+                    if (_isUp == true)
+                    {
+                        Elevator_door_EG.SetBool("open", false);
+                        Elevator_door_OG.SetBool("open", true);
+                    }
+                    else
+                    {
+                        Elevator_door_EG.SetBool("open", true);
+                        Elevator_door_OG.SetBool("open", false);
+                    }
                 }
 
-            }                                                     
+
+            }
         }
     }
+
 }
+
